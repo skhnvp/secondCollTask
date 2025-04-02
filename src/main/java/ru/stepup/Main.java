@@ -27,25 +27,14 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        ArrayList<Integer> list = new ArrayList<>();
-
-        list.add(6);
-        list.add(5);
-        list.add(3);
-        list.add(1);
-        list.add(10);
-        list.add(8);
-        list.add(2);
-        list.add(4);
-        list.add(7);
-        list.add(9);
+        ArrayList<Integer> list = new ArrayList<>(Arrays.asList(6,5,3,1,10,8,2,4,7,9));
 
         System.out.println("List: " + list);
         bubbleSort(list);
 
         int[] intArray = {6,5,3,1,10,8,2,4,7,9};
 
-        System.out.println("array: " + Arrays.toString(intArray));
+        System.out.println("Array: " + Arrays.toString(intArray));
         bubbleSort(intArray);
     }
     public static void bubbleSort(ArrayList<Integer> intList) {
